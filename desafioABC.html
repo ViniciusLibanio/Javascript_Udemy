@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio A B C</title>
+    <script>
+
+        var a = 10
+        var b = 20
+        var c = null
+
+        document.write(`A: ${a} <br />`)
+        document.write(`B: ${b} <br />`)
+        document.write(`C: ${c} <br />`)
+
+        document.write('<hr/>')
+
+        //Aqui entra a lógica de programação.
+
+        c = a // C pega o valor de A, ou seja, 10, temporariamente.
+        a = b // A pega o valor de B, ou seja, 20 (já inverteu o A com o B)
+        b = c // B pega o valor contido em C que foi armazenado temporariamente, sendo o valor anteriormente que constava em A
+        c = null // C retorna a ser NULL.
+
+        //Fim da lógica
+
+        document.write(`A: ${a} <br />`)
+        document.write(`B: ${b} <br />`)
+        document.write(`C: ${c} <br />`)
+       
+    </script>
+</head>
+<body>
+
+</body>
+</html>
