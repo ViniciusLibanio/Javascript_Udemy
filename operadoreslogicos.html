@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+    <script>
+
+        //Com o operador lógico && somente dará o resultado TRUE se todos os resultados forem TRUE.
+        //Com o operador lógico || (ou) somente dará o resultado True se ALGUM dos resultados forem TRUE.
+
+        //true && true && false = false
+        if (2 == 2 && 3 >= 1 && 'a' == 'b') {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso')
+        }
+
+
+        //O operador '!' inverte o resultado lógico da expressão de comparação.
+
+        if (!(4 == 4)) { //Retornará FALSE, pois está perguntando se 4 é diferente de 4.
+            document.write(' Verdadeiro')
+        } else {
+            document.write(' Falso')
+        }
+
+
+        //Exemplo prático:
+        var nota = prompt('Digite a nota do aluno: ')
+        var faltas = prompt('Digite a quantidade de faltas do aluno: ')
+
+        var media = 7
+        var faltasMaximas = 15
+
+        if (nota >= media && faltas <= faltasMaximas) {
+            alert('Aprovado!')
+        } else {
+            alert('Reprovado!')
+        }
+        
+
+        //Operador ternário se torna mais limitado pois retorna valores, que correspondem a dados, como strings ou valores numéricos.
+        var operadorTernario = condicao ? verdadeiro : falso
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
