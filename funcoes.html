@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+
+    
+
+</head>
+<body>
+    <h1>Funções</h1>
+
+
+    <script>
+
+        /*
+            Funções podem ser de dois tipos:
+            1-void = elas realizam algum tipo de processamento e não fornecem nenhum tipo de retorno para quem fez o chamado.
+            2-retorno = esse tipo retorna um parâmetro para quem fez a chamada e esse parâmetro pode ser reutilizado por quem fez a chamada.
+        
+        */
+
+
+        function calcularAreaTerreno (largura, comprimento) {
+            //lógica
+            var area = largura * comprimento
+            return area
+            
+        }
+
+        var largura = prompt('Digite a largura do terreno em metros: ')
+        var comprimento = prompt('Digite o comprimento do terreno em metros: ')
+
+        var area = largura * comprimento
+        
+        document.write('O terreno possui ' + area + ' metros quadrados')
+
+
+    </script>
+</body>
+</html>
